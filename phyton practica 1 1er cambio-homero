@@ -45,3 +45,18 @@ def cuadrado_cubo():
     n = float(input("Ingrese un número: "))
     print("Cuadrado:", n ** 2)
     print("Cubo:", n ** 3)
+def promedio():
+    suma = 0
+    contador = 0
+ 
+    while True:
+        num = float(input("Ingrese un número (-1 para terminar): "))
+        if num == -1:
+            break
+        suma += num
+        contador += 1
+ 
+    if contador == 0:
+        print("No se ingresaron números.")
+    else:
+        print("El promedio es:", suma / contador)
