@@ -60,3 +60,18 @@ def promedio():
         print("No se ingresaron números.")
     else:
         print("El promedio es:", suma / contador)
+
+def maximo_minimo():
+    n = int(input("¿Cuántos números enteros desea ingresar?: "))
+    if n <= 0:
+        print("Cantidad inválida.")
+        return
+
+    numeros = []
+    for i in range(n):
+        num = int(input(f"Ingrese el número {i+1}: "))
+        numeros.append(num)
+ 
+    print("Máximo:", max(numeros))
+    print("Mínimo:", min(numeros))
+    print("Total de números ingresados:", len(numeros))
